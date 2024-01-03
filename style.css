@@ -11,6 +11,15 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.custom-shadow{
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.10);
+}
+
+.custom-shadow-2{
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+}
+
+
 @media screen and (max-width:768px) {
   #navbar #hamburger-menu{
     transition: transform 0.5s ease-in-out;
