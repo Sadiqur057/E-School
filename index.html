@@ -12,19 +12,26 @@
 <body>
   <header class="bg-[#F0FFF0] h-28 flex items-center">
     <nav class="w-5/6 mx-auto">
-      <div class="flex justify-between items-center">
+      <div class="flex justify-between items-center " id="navbar">
         <div class="flex w-48 justify-evenly items-center">
           <img class="h-[59px]" src="./images/logo.png" alt="">
           <h1 class="font-bold text-[#56548C] text-2xl font-rubik">E- School</h1>
         </div>
-
-        <div>
-          <ul class="flex w-[560px] justify-between items-center">
-            <li class="font-poppins "><a href="#">Books</a></li>
-            <li class="font-poppins "><a href="#">Courses</a></li>
-            <li class="font-poppins "><a href="#">Others</a></li>
-            <li class="font-poppins "><a href="#">Blog</a></li>
-            <li class="font-roboto  bg-[#21B573] px-7 py-3 rounded-3xl text-white"><a href="#">Sign in</a></li>
+        <input class="h-10 w-10 absolute left-[82%] z-10  opacity-0 top-7" id="checkbox" type="checkbox">
+        <div class="absolute top-9 left-[83%] h-7 flex flex-col justify-between md:hidden lines ">
+          <p class="bg-[#4D4D4D] h-1 rounded-md w-8 line-1"></p>
+          <p class="bg-[#4D4D4D] h-1 rounded-md w-8 line-2"></p>
+          <p class="bg-[#4D4D4D] h-1 rounded-md w-8 line-3"></p>
+        </div>
+        <div
+          class=" md:static absolute left-0 top-16 md:w-[560px] w-full md:py-0 py-2  md:translate-x-0 -translate-x-[150%] my-4 md:my-0"
+          id="hamburger-menu">
+          <ul class="flex md:items-center md:flex-row flex-col pt-3 bg-[#F0FFF0] items-center md:shadow-none shadow-md justify-between">
+            <li class="font-poppins py-2"><a href="#">Books</a></li>
+            <li class="font-poppins py-1"><a href="#">Courses</a></li>
+            <li class="font-poppins py-1"><a href="#">Others</a></li>
+            <li class="font-poppins py-1"><a href="#">Blog</a></li>
+            <li class="font-roboto bg-[#21B573] px-5 md:px-7 py-2 md:py-3 rounded-3xl text-white text-base mt-1 mb-3"><a href="#">Sign in</a></li>
           </ul>
         </div>
       </div>
@@ -32,21 +39,26 @@
   </header>
 
   <main>
-    <div class="py-14 bg-[#F0FFF0]">
-      <div class="w-5/6 mx-auto flex justify-between items-center">
-        <div class="w-[38%]">
+    <section class="pb-7 md:py-14 bg-[#F0FFF0]">
+      <div class="w-5/6 mx-auto flex justify-between items-center md:flex-row flex-col-reverse">
+        <div class="w-full md:w-[38%]">
           <p class="font-poppins text-[#FD511A] py-2">Are you ready to Learn?</p>
-          <h1 class="font-poppins text-5xl font-bold leading-tight">Learn With fun on <span class="text-[#21B573] ">any
+          <h1 class="font-poppins text-3xl md:text-5xl font-bold leading-tight">Learn With fun on <span class="text-[#21B573] ">any
               schedule</span></h1>
-          <p class="text-[#6C6B6B] pb-10 pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius blandit
+          <p class="text-[#6C6B6B] pb-6 md:pb-10 pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius blandit
             facilisis quam netus.</p>
-          <a class="font-roboto  bg-[#21B573] px-7 py-3 rounded-3xl text-white" href="#">Sign in</a>
+          <a class="font-roboto bg-[#21B573] px-7 py-3 rounded-3xl text-white" href="#">Sign in</a>
         </div>
-        <div class="w-[45%]">
+        <div class=" w-full md:w-[45%] mb-4 md:mb-0">
           <img src="./images/landing.png" alt="">
         </div>
       </div>
-    </div>
+    </section>
+
+
+
+
+
   </main>
 </body>
 
