@@ -6,6 +6,10 @@ let totalSeats = 60;
 const courses = document.querySelectorAll(".course");
 let cartsContainer = document.querySelector("#carts");
 
+document.querySelector('#error-msg').classList.add('hidden');
+document.querySelector('#success-msg').classList.add('hidden');
+document.querySelector('#remove-msg').classList.add('hidden');
+
 courses.forEach((singleCourse) => {
   const courseName = singleCourse.childNodes[3].innerText;
   const coursePrice = singleCourse.childNodes[5].childNodes[0].innerText;
@@ -13,23 +17,30 @@ courses.forEach((singleCourse) => {
   const seatCounts =
     singleCourse.childNodes[9].childNodes[3].childNodes[3].childNodes[0]
       .innerText;
-  console.log(singleCourse.childNodes[7]);
   const addToCartBtn = singleCourse.childNodes[7];
 
   addToCartBtn.addEventListener("click", () => {
     if (courseName in CartsState) {
-      console.log("found");
+      document.querySelector('#error-msg').classList.remove('hidden');
+      setTimeout(() => {
+        document.querySelector('#error-msg').classList.add('hidden');
+      }, 2000);
     } else {
       CartsState[courseName] = {};
       CartsState[courseName]["img"] = courseImg;
       CartsState[courseName]["price"] = coursePrice;
       CartsState[courseName]["seats"] = seatCounts;
+      document.querySelector('#success-msg').classList.remove('hidden');
+      setTimeout(() => {
+        document.querySelector('#success-msg').classList.add('hidden');
+      }, 2000);
       updatePrice();
       updateItemInfo();
+      updateSeats();
+      CartsState[courseName]["seats"] = seatCounts - 1;
       singleCourse.childNodes[9].childNodes[3].childNodes[3].childNodes[0].innerText =
-        seatCounts - 1;
+        CartsState[courseName]["seats"];
     }
-    console.log(CartsState);
     renderStateOnPage(CartsState);
   });
 });
@@ -43,11 +54,15 @@ function updateItemInfo() {
 }
 
 function updateSeats() {
-  totalSeats = 60;
-  for (courseName in CartsState) {
-    totalSeats = Number(CartsState[courseName].seats);
-  }
-  document.querySelector(".seat-counts").innerText = totalSeats;
+  courses.forEach((singleCourse) => {
+    const courseName = singleCourse.childNodes[3].innerText;
+    if (courseName in CartsState) {
+      singleCourse.childNodes[9].childNodes[3].childNodes[3].childNodes[0].innerText =
+        CartsState[courseName].seats;
+    } else {
+      singleCourse.childNodes[9].childNodes[3].childNodes[3].childNodes[0].innerText = 60;
+    }
+  });
 }
 
 function updatePrice() {
@@ -90,11 +105,13 @@ function createCartItem(img_url, courseName, course_price, course_seat) {
 }
 
 function deleteFromCarts(courseName) {
-  console.log(CartsState[courseName]);
   delete CartsState[courseName];
+  document.querySelector('#remove-msg').classList.remove('hidden');
+  setTimeout(() => {
+    document.querySelector('#remove-msg').classList.add('hidden');
+  }, 2000);
   updatePrice();
   updateItemInfo();
   updateSeats();
-  console.log(Object.keys(CartsState).length);
   return renderStateOnPage(CartsState);
 }
