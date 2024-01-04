@@ -24,7 +24,7 @@ courses.forEach((singleCourse) => {
       document.querySelector('#error-msg').classList.remove('hidden');
       setTimeout(() => {
         document.querySelector('#error-msg').classList.add('hidden');
-      }, 2000);
+      }, 1500);
     } else {
       CartsState[courseName] = {};
       CartsState[courseName]["img"] = courseImg;
@@ -33,7 +33,7 @@ courses.forEach((singleCourse) => {
       document.querySelector('#success-msg').classList.remove('hidden');
       setTimeout(() => {
         document.querySelector('#success-msg').classList.add('hidden');
-      }, 2000);
+      }, 1500);
       updatePrice();
       updateItemInfo();
       updateSeats();
@@ -109,7 +109,7 @@ function deleteFromCarts(courseName) {
   document.querySelector('#remove-msg').classList.remove('hidden');
   setTimeout(() => {
     document.querySelector('#remove-msg').classList.add('hidden');
-  }, 2000);
+  }, 1500);
   updatePrice();
   updateItemInfo();
   updateSeats();
