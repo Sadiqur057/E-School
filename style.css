@@ -19,6 +19,17 @@
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
 }
 
+.info-section div:hover{
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+  background-color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover{
+  background-color: #1eae6d;
+  box-shadow: 0px 1px 2px 0px rgba(102, 210, 161, 0.667);
+  transition: all 0.3s ease-in-out;
+}
 
 @media screen and (max-width:768px) {
   #navbar #hamburger-menu{

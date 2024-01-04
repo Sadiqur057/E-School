@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="bg-[#F0FFF0] h-[76px] md:h-28 flex items-center fixed w-full opacity-95 shadow-md">
+  <header class="bg-[#F0FFF0] h-[76px] md:h-28 flex items-center fixed w-full opacity-95 shadow-md md:shadow-none md:static">
     <nav class="w-5/6 mx-auto">
       <div class="flex justify-between items-center" id="navbar">
         <div class="flex w-48 justify-evenly items-center">
@@ -28,12 +28,12 @@
           class=" md:static absolute left-0 top-[50px] md:w-[400px] lg:w-[560px] w-full md:py-0 py-2  md:translate-x-0 -translate-x-[150%] my-4 md:my-0"
           id="hamburger-menu">
           <ul
-            class="flex md:items-center md:flex-row flex-col pt-3 bg-[#F0FFF0] items-center md:shadow-none shadow-md justify-between">
+            class="flex md:items-center md:flex-row flex-col pt-3 pb-7 bg-[#F0FFF0] items-center md:shadow-none shadow-md justify-between">
             <li class="font-poppins py-2"><a href="#">Books</a></li>
             <li class="font-poppins py-1"><a href="./course.html">Courses</a></li>
             <li class="font-poppins py-1"><a href="#">Others</a></li>
-            <li class="font-poppins py-1"><a href="#">Blog</a></li>
-            <li class="font-roboto bg-[rgb(33,181,115)] px-6 md:px-7 py-2 md:py-3 rounded-3xl text-white text-base mt-1 mb-3"><a
+            <li class="font-poppins pt-1 mb-5 md:mb-1"><a href="#">Blog</a></li>
+            <li ><a class="font-roboto bg-[rgb(33,181,115)] px-6 md:px-7 py-2 md:py-3 rounded-3xl text-white text-base mt-1 mb-3 btn"
                 href="#">Sign in</a></li>
           </ul>
         </div>
@@ -42,17 +42,17 @@
   </header>
 
   <main>
-    <section class="pt-[120px] md:pt-[140px] pb-7 md:py-14 bg-[#F0FFF0]">
+    <section class="pt-[120px] md:pt-12 pb-7 md:py-14 bg-[#F0FFF0]">
       <div class="w-5/6 mx-auto flex justify-between items-center md:flex-row flex-col-reverse mb-1 md:mb-0">
         <div class="w-full md:w-[38%]">
-          <p class="font-poppins text-[#FD511A] py-2">Are you ready to Learn?</p>
-          <h1 class="font-poppins text-3xl md:text-5xl font-bold leading-tight">Learn With fun on <span
+          <p class="font-poppins text-[#FD511A] py-2 text-sm md:text-base">Are you ready to Learn?</p>
+          <h1 class="font-poppins text-3xl md:text-5xl font-bold md:leading-tight leading-10">Learn With fun on <span
               class="text-[#21B573] ">any
               schedule</span></h1>
-          <p class="text-[#6C6B6B] pb-6 md:pb-10 pt-2 md:pt-4 font-poppins">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius
+          <p class="text-[#6C6B6B] pb-6 md:pb-10 pt-2 md:pt-4 font-poppins leading-7 md:leading-[30px]text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius
             blandit
             facilisis quam netus.</p>
-          <a class="font-roboto bg-[#21B573] px-6 md:px-7 py-2 md:py-3  rounded-3xl text-white" href="#">Get Started</a>
+          <a class="font-roboto bg-[#21B573] px-5 md:px-7 py-3 md:py-[14px] btn rounded-3xl text-white" href="#">Get Started</a>
         </div>
         <div class=" w-full md:w-[45%] mb-4 md:mb-0">
           <img src="./images/landing.png" alt="">
@@ -61,30 +61,30 @@
     </section>
 
     <section>
-      <div class="w-5/6 mx-auto flex pt-10 justify-between flex-wrap md:flex-nowrap">
+      <div class="w-5/6 mx-auto flex pt-10 justify-between flex-wrap md:flex-nowrap info-section">
         <div
           class="w-[48%] md:w-[23%] lg:w-[270px]  lg:h-[270px] bg-[#F5FFFA] flex flex-col justify-center items-center py-4 md:py-6 mb-6 lg:mx-2 px-4 rounded-xl">
-          <img class="w-11 md:w-[24%] pb-2 lg:pb-5" src="./images/topic/topic-1.png" alt="">
-          <p class="text-[#413960] font-medium font-poppins text-base md:text-lg lg:text-2xl text-center ">1500+ Topic</p>
-          <p class="font-poppins text-[#585859] lg:pt-1 text-sm lg:text-base text-center">Learn Anythings</p>
+          <img class="w-10 md:w-[22%] pb-3 lg:pb-5" src="./images/topic/topic-1.png" alt="">
+          <p class="text-[#413960] font-medium font-poppins text-sm md:text-lg lg:text-2xl text-center pt-[6px] pb-1 ">1500+ Topic</p>
+          <p class="font-poppins text-[#585859] lg:pt-1 text-xs lg:text-base text-center">Learn Anythings</p>
         </div>
         <div
-          class="w-[48%] md:w-[23%] lg:w-[270px]  lg:h-[270px]  flex flex-col justify-center items-center py-4 md:py-6 mb-6 lg:mx-2 px-4 custom-shadow-2 rounded-xl">
+          class="w-[48%] md:w-[23%] lg:w-[270px]  lg:h-[270px]  flex flex-col justify-center items-center py-4 md:py-6 mb-6 lg:mx-2 px-4 bg-[#F5FFFA] rounded-xl">
           <img class="w-11 md:w-[24%] pb-2 lg:pb-5" src="./images/topic/topic-2.png" alt="">
-          <p class="text-[#413960] font-medium font-poppins md:text-lg lg:text-2xl text-center">1800+ Students</p>
-          <p class="font-poppins text-[#585859] lg:pt-1 text-sm lg:text-base text-center">Learn Anythings</p>
+          <p class="text-[#413960] font-medium font-poppins text-sm md:text-lg lg:text-2xl text-center pt-[6px] pb-1 ">1800+ Students</p>
+          <p class="font-poppins text-[#585859] lg:pt-1 text-xs lg:text-base text-center">Learn Anythings</p>
         </div>
         <div
           class="w-[48%] md:w-[23%] lg:w-[270px]  lg:h-[270px] bg-[#F5FFFA] flex flex-col justify-center items-center py-4 md:py-6 mb-5 lg:mx-2 px-4 rounded-xl">
           <img class="w-11 md:w-[24%] pb-2 lg:pb-5" src="./images/topic/topic-3.png" alt="">
-          <p class="text-[#413960] font-medium font-poppins md:text-lg lg:text-2xl text-center">9K+ Test Token</p>
-          <p class="font-poppins text-[#585859] lg:pt-1 text-sm lg:text-base text-center">Learn Anythings</p>
+          <p class="text-[#413960] font-medium font-poppins text-sm md:text-lg lg:text-2xl text-center pt-[6px] pb-1">9K+ Test Token</p>
+          <p class="font-poppins text-[#585859] lg:pt-1 lg:text-base text-center text-xs">Learn Anythings</p>
         </div>
         <div
           class="w-[48%] md:w-[23%] lg:w-[270px]  lg:h-[270px] bg-[#F5FFFA] flex flex-col justify-center items-center py-4 md:py-6 mb-5 lg:mx-2 px-4 rounded-xl">
           <img class="w-11 md:w-[24%] pb-2 lg:pb-5" src="./images/topic/topic-4.png" alt="">
-          <p class="text-[#413960] font-medium font-poppins md:text-lg lg:text-2xl text-center">2000+ Student</p>
-          <p class="font-poppins text-[#585859] lg:pt-1 text-sm lg:text-base text-center">Learn Anythings</p>
+          <p class="text-[#413960] font-medium font-poppins md:text-lg lg:text-2xl text-center text-sm pt-[6px] pb-1">2000+ Student</p>
+          <p class="font-poppins text-[#585859] lg:pt-1 text-xs lg:text-base text-center">Learn Anythings</p>
         </div>
 
       </div>
@@ -92,14 +92,14 @@
 
     <section>
       <div class="w-5/6 mx-auto mb-10">
-        <h1 class="text-center pt-8 pb-6 md:pt-14 md:pb-12 text-[#413960] font-bold font-poppins text-3xl md:text-4xl">Online Courses</h1>
+        <h1 class="text-center pt-8 pb-6 md:pt-16 md:pb-10 text-[#413960] font-bold font-poppins text-3xl md:text-4xl">Online Courses</h1>
         <div class="flex flex-wrap justify-center">
           <div class="w-full md:w-[340px] px-5 py-6 md:mx-4 my-2 md:my-4 custom-shadow rounded-xl">
             <img class="w-full" id="course-img" src="./images/course/course-1.png" alt="">
             <h1 class="text-[#413960] font-poppins font-medium md:text-2xl text-lg mt-4 mb-1" id="course-name">Modern
               Psychology</h1>
             <p class="font-poppins mb-7"><span id="course-price">1300</span> TK</p>
-            <a class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base" href="./course.html">Buy
+            <a class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base btn" href="./course.html">Buy
               course</a>
               <div class="flex justify-between flex-wrap mt-10">
                 <div class="flex justify-between pb-2">
@@ -120,7 +120,7 @@
             <h1 class="text-[#413960] font-poppins font-medium md:text-2xl text-lg mt-4 mb-1" id="course-name">Modern
               Psychology</h1>
             <p class="font-poppins mb-7"><span id="course-price">1300</span> TK</p>
-            <a class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base" href="./course.html">Buy
+            <a class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base btn" href="./course.html">Buy
               course</a>
               <div class="flex justify-between flex-wrap mt-10">
                 <div class="flex justify-between pb-2">
@@ -141,7 +141,7 @@
             <h1 class="text-[#413960] font-poppins font-medium md:text-2xl text-lg mt-4 mb-1" id="course-name">Modern
               Psychology</h1>
             <p class="font-poppins mb-7"><span id="course-price">1300</span> TK</p>
-            <a class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base" href="./course.html">Buy
+            <a class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base btn" href="./course.html">Buy
               course</a>
               <div class="flex justify-between flex-wrap mt-10">
                 <div class="flex justify-between pb-2">
@@ -158,7 +158,7 @@
 
           </div>
         </div>
-        <div class="text-center my-7">
+        <div class="text-center my-8">
           <a class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base" href="./course.html">All
             courses</a>
         </div>
@@ -173,7 +173,7 @@
             <img class="w-full" src="./images/testimonial.png" alt="">
           </div>
           <div class=" md:w-[77%]">
-            <p class="font-poppins leading-[24px] md:leading-[30px] md:text-base text-sm text-justify">There are many variations of passages of Lorem Ipsum available, but
+            <p class="font-poppins leading-[24px] md:leading-[30px] md:text-base text-sm">There are many variations of passages of Lorem Ipsum available, but
               the
               majority have suffered alteration in some form, by injected humour,
               or randomised words which don't look even slightly believable.</p>
@@ -192,12 +192,13 @@
             <h1 class="font-bold text-[#56548C] text-lg md:text-2xl font-rubik px-1">E- School</h1>
           </div>
           <div class="w-[60%] md:w-auto md:pt-2">
-            <p class="text-white leading-[24px] md:leading-[30px]  font-poppins md:text-base text-sm ">Millions of people of all ages and from around
+            <p class="text-white leading-[24px] md:leading-[30px]  font-poppins md:text-base text-sm ">Millions of
+              people of all ages and from around
               the world are improving their lives with us</p>
           </div>
         </div>
-        <div class="flex md:w-[63%] justify-between">
-          <div class="text-white font-poppins leading-[24px] md:leading-[30px]  md:text-base text-sm">
+        <div class="flex md:w-[63%] justify-between flex-wrap">
+          <div class="text-white font-poppins leading-[24px] md:leading-[30px]  md:text-base text-sm pb-4">
             <h1 class="text-base md:text-lg font-bold pb-2">Course</h1>
             <ul>
               <li><a href="#">Graphic Design</a></li>
@@ -207,7 +208,7 @@
               <li><a href="#">Engineering</a></li>
             </ul>
           </div>
-          <div class="text-white font-poppins leading-[24px] md:leading-[30px] md:text-base text-sm mx-2">
+          <div class="text-white font-poppins leading-[24px] md:leading-[30px] md:text-base text-sm mx-2 pb-4">
             <h1 class="text-base md:text-lg font-bold pb-2">Terms</h1>
             <ul>
               <li><a href="#">Graphic Design</a></li>
@@ -229,7 +230,7 @@
           </div>
         </div>
       </div>
-      <div class="pb-7 md:pt-4">
+      <div class="pb-7 md:mt-4">
         <p class="text-[#CDCDCD] font-poppins text-center md:text-base text-sm">Copyright © 2024 21daysofcode.com</p>
       </div>
     </div>

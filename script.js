@@ -1,4 +1,3 @@
-
 const CartsState = {};
 
 let itemCounts = 0;
@@ -18,8 +17,6 @@ courses.forEach((singleCourse) => {
   const addToCartBtn = singleCourse.childNodes[7];
 
   addToCartBtn.addEventListener("click", () => {
-    // console.log(`Clicked ${idx} || Course Price ${coursePrice} || Course Name: ${courseName}`)
-
     if (courseName in CartsState) {
       console.log("found");
     } else {
@@ -62,9 +59,11 @@ function updatePrice() {
 }
 
 function renderStateOnPage(CartsState) {
-  if(Object.keys(CartsState).length == 0){
-    document.querySelector("#carts").innerHTML = `<p class="text-center text-[#585859] text-sm md:text-base font-medium font-poppins py-8">You Still haven't Selected anything.</p>`
-  }else{
+  if (Object.keys(CartsState).length == 0) {
+    document.querySelector(
+      "#carts"
+    ).innerHTML = `<p class="text-center text-[#585859] text-sm md:text-base font-medium font-poppins py-8">You Still haven't Selected anything.</p>`;
+  } else {
     let cartItemsHTML = "";
     for (const courseName in CartsState) {
       const img_url = CartsState[courseName].img;

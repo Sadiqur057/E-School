@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="h-[76px] md:h-28 flex items-center fixed w-full opacity-95 shadow-md bg-white">
+  <header class="h-[76px] md:h-28 flex items-center fixed md:static w-full opacity-95 shadow-md md:shadow-none bg-white">
     <nav class="w-5/6 mx-auto">
       <div class="flex justify-between items-center" id="navbar">
         <div class="flex w-48 justify-evenly items-center">
@@ -28,14 +28,13 @@
           class=" md:static absolute left-0 top-[50px] md:w-[400px] lg:w-[560px] w-full md:py-0 py-2  md:translate-x-0 -translate-x-[150%] my-4 md:my-0"
           id="hamburger-menu">
           <ul
-            class="flex md:items-center md:flex-row flex-col pt-3 items-center bg-white md:shadow-none shadow-md justify-between">
+            class="flex md:items-center md:flex-row flex-col pt-3 items-center bg-white md:shadow-none shadow-md justify-between pb-7">
             <li class="font-poppins py-2"><a href="#">Books</a></li>
             <li class="font-poppins py-1"><a href="#">Courses</a></li>
             <li class="font-poppins py-1"><a href="#">Others</a></li>
-            <li class="font-poppins py-1"><a href="#">Blog</a></li>
-            <li
-              class="font-roboto bg-[rgb(33,181,115)] px-6 md:px-7 py-2 md:py-3 rounded-3xl text-white text-base mt-1 mb-3">
-              <a href="#">Sign in</a>
+            <li class="font-poppins pt-1 mb-5 md:mb-1"><a href="#">Blog</a></li>
+            <li>
+              <a href="#" class="font-roboto bg-[rgb(33,181,115)] px-6 md:px-7 py-2 md:py-3 rounded-3xl text-white text-base mt-1 mb-3 btn">Sign out</a>
             </li>
           </ul>
         </div>
@@ -45,7 +44,7 @@
 
   <main>
     <section>
-      <div class="w-5/6 mx-auto mb-10 pt-[120px]">
+      <div class="w-5/6 mx-auto mb-10 pt-[80px] md:pt-1">
         <h1 class="pt-8 pb-6 md:pt-14 md:pb-12 text-[#413960] font-bold font-poppins text-3xl md:text-4xl ">All Courses
         </h1>
         <div class="flex justify-between md:flex-row flex-col-reverse">
@@ -59,7 +58,7 @@
                   Modern
                   Psychology - 1</h1>
                 <p class="font-poppins mb-7"><span class="course-price">1350</span> TK</p>
-                <button class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base">Buy Course</button>
+                <button class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base btn">Buy Course</button>
 
                 <div class="flex justify-between flex-wrap mt-10">
                   <div class="flex justify-between pb-2">
@@ -81,7 +80,7 @@
                   Modern
                   Psychology - 2</h1>
                 <p class="font-poppins mb-7"><span class="course-price">1750</span> TK</p>
-                <button class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base">Buy Course</button>
+                <button class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base btn">Buy Course</button>
                 <div class="flex justify-between flex-wrap mt-10">
                   <div class="flex justify-between pb-2">
                     <img class="w-5 md:w-6" src="./images/date.png" alt="">
@@ -102,7 +101,7 @@
                   Modern
                   Psychology - 3</h1>
                 <p class="font-poppins mb-7"><span class="course-price">2300</span> TK</p>
-                <button class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base">Buy Course</button>
+                <button class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base btn">Buy Course</button>
 
                 <div class="flex justify-between flex-wrap mt-10">
                   <div class="flex justify-between pb-2">
@@ -124,7 +123,7 @@
                   Modern
                   Psychology - 4</h1>
                 <p class="font-poppins mb-7"><span class="course-price">1300</span> TK</p>
-                <button class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base">Buy Course</button>
+                <button class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base btn">Buy Course</button>
                 <div class="flex justify-between flex-wrap mt-10">
                   <div class="flex justify-between pb-2">
                     <img class="w-5 md:w-6" src="./images/date.png" alt="">
@@ -145,7 +144,7 @@
                   Modern
                   Psychology - 5</h1>
                 <p class="font-poppins mb-7"><span class="course-price">3350</span> TK</p>
-                <button class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base">Buy Course</button>
+                <button class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base btn">Buy Course</button>
 
                 <div class="flex justify-between flex-wrap mt-10">
                   <div class="flex justify-between pb-2">
@@ -167,7 +166,7 @@
                   Modern
                   Psychology - 6</h1>
                 <p class="font-poppins mb-7"><span class="course-price">750</span> TK</p>
-                <button class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base">Buy Course</button>
+                <button class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base btn">Buy Course</button>
                 <div class="flex justify-between flex-wrap mt-10">
                   <div class="flex justify-between pb-2">
                     <img class="w-5 md:w-6" src="./images/date.png" alt="">
@@ -198,16 +197,16 @@
               <p class="w-full h-[0.5px] bg-slate-500 my-[6px]"></p>
               <div class="flex justify-between mt-4">
                 <div class="pl-[15%] md:pl-[25%]">
-                  <p class="text-[#585859] font-sm font-medium font-poppins">Sub-Total</p>
+                  <p class="text-[#585859] font-sm font-medium font-poppins text-base">Sub-Total</p>
                   <p class="text-xs font-medium font-poppins text-[#888889]"><span id="course-counts">0</span> items
                   </p>
                 </div>
                 <div>
-                  <p class="text-lg md:text-xl font-medium font-poppins text-[#585859]"><span id="total-price">0</span> TK</p>
+                  <p class="text-base md:text-xl font-medium font-poppins text-[#585859]"><span id="total-price">0</span> TK</p>
                 </div>
               </div>
               <div class="my-5 text-right">
-                <a class="font-roboto bg-[#21B573] px-6 py-2 md:py-[10px]  rounded-3xl text-white text-base my-5"
+                <a class="font-roboto bg-[#21B573] px-6 py-3 md:py-[10px]  rounded-3xl text-white text-base my-5 btn"
                   href="#">Checkout</a>
               </div>
             </div>
@@ -231,8 +230,8 @@
               the world are improving their lives with us</p>
           </div>
         </div>
-        <div class="flex md:w-[63%] justify-between">
-          <div class="text-white font-poppins leading-[24px] md:leading-[30px]  md:text-base text-sm">
+        <div class="flex md:w-[63%] justify-between flex-wrap">
+          <div class="text-white font-poppins leading-[24px] md:leading-[30px]  md:text-base text-sm pb-4">
             <h1 class="text-base md:text-lg font-bold pb-2">Course</h1>
             <ul>
               <li><a href="#">Graphic Design</a></li>
@@ -242,7 +241,7 @@
               <li><a href="#">Engineering</a></li>
             </ul>
           </div>
-          <div class="text-white font-poppins leading-[24px] md:leading-[30px] md:text-base text-sm mx-2">
+          <div class="text-white font-poppins leading-[24px] md:leading-[30px] md:text-base text-sm mx-2 pb-4">
             <h1 class="text-base md:text-lg font-bold pb-2">Terms</h1>
             <ul>
               <li><a href="#">Graphic Design</a></li>
@@ -264,7 +263,7 @@
           </div>
         </div>
       </div>
-      <div class="pb-7 md:pt-4">
+      <div class="pb-7 md:mt-4">
         <p class="text-[#CDCDCD] font-poppins text-center md:text-base text-sm">Copyright © 2024 21daysofcode.com</p>
       </div>
     </div>
