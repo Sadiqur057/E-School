@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E- School</title>
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="bg-[#F0FFF0] h-[76px] md:h-28 flex items-center fixed w-full opacity-95 shadow-md">
+    <nav class="w-5/6 mx-auto">
+      <div class="flex justify-between items-center" id="navbar">
+        <div class="flex w-48 justify-evenly items-center">
+          <a href="./index.html"><img class="h-11 md:h-[59px]" src="./images/logo.png" alt=""></a>
+          <h1 class="font-bold text-[#56548C] text-[22px] md:text-2xl font-rubik">E- School</h1>
+        </div>
+        <input class="h-10 w-10 absolute left-[84%] z-10  opacity-0 top-5" id="checkbox" type="checkbox">
+        <div class="absolute top-6 left-[85%] h-7 flex flex-col justify-between md:hidden lines ">
+          <p class="bg-[#4D4D4D] h-1 rounded-md w-8 line-1"></p>
+          <p class="bg-[#4D4D4D] h-1 rounded-md w-8 line-2"></p>
+          <p class="bg-[#4D4D4D] h-1 rounded-md w-8 line-3"></p>
+        </div>
+        <div
+          class=" md:static absolute left-0 top-[50px] md:w-[400px] lg:w-[560px] w-full md:py-0 py-2  md:translate-x-0 -translate-x-[150%] my-4 md:my-0"
+          id="hamburger-menu">
+          <ul
+            class="flex md:items-center md:flex-row flex-col pt-3 bg-[#F0FFF0] items-center md:shadow-none shadow-md justify-between">
+            <li class="font-poppins py-2"><a href="#">Books</a></li>
+            <li class="font-poppins py-1"><a href="#">Courses</a></li>
+            <li class="font-poppins py-1"><a href="#">Others</a></li>
+            <li class="font-poppins py-1"><a href="#">Blog</a></li>
+            <li
+              class="font-roboto bg-[rgb(33,181,115)] px-6 md:px-7 py-2 md:py-3 rounded-3xl text-white text-base mt-1 mb-3">
+              <a href="#">Sign in</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="w-5/6 mx-auto mb-10 pt-[120px]">
+        <h1 class="pt-8 pb-6 md:pt-14 md:pb-12 text-[#413960] font-bold font-poppins text-3xl md:text-4xl ">All Courses
+        </h1>
+        <div class="flex justify-between md:flex-row flex-col-reverse">
+          <!-- courses -->
+          <div class="md:w-[65%]">
+            <div class="flex md:w-full flex-wrap">
+              <div class="w-full md:w-[340px] px-5 py-6 md:mx-4 my-2 md:my-4 custom-shadow rounded-xl">
+                <img class="w-full" id="course-img" src="./images/course/course-2.png" alt="">
+                <h1 class="text-[#413960] font-poppins font-medium md:text-2xl text-lg mt-4 mb-1" id="course-name">
+                  Modern
+                  Psychology</h1>
+                <p class="font-poppins mb-7"><span id="course-price">1300</span> TK</p>
+                <a class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base"
+                  href="#">Buy
+                  course</a>
+                <div class="flex justify-between flex-wrap mt-10">
+                  <div class="flex justify-between pb-2">
+                    <img class="w-5 md:w-6" src="./images/date.png" alt="">
+                    <p class="px-1 text-[#585859] font-medium font-poppins text-sm md:text-base">Start 20 April, 2021
+                    </p>
+                  </div>
+                  <div class="flex justify-between">
+                    <img class="w-5 md:w-6" src="./images/user.png" alt="">
+                    <p class="px-1 text-[#585859] font-medium font-poppins text-sm md:text-base"><span
+                        id="seat-counts">60</span> seats</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="w-full md:w-[340px] px-5 py-6 md:mx-4 my-2 md:my-4 custom-shadow rounded-xl">
+                <img class="w-full" id="course-img" src="./images/course/course-3.png" alt="">
+                <h1 class="text-[#413960] font-poppins font-medium md:text-2xl text-lg mt-4 mb-1" id="course-name">
+                  Modern
+                  Psychology</h1>
+                <p class="font-poppins mb-7"><span id="course-price">1300</span> TK</p>
+                <a class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base"
+                  href="#">Buy
+                  course</a>
+                <div class="flex justify-between mt-10">
+                  <div class="flex justify-between">
+                    <img class="w-5 md:w-6" src="./images/date.png" alt="">
+                    <p class="px-1 text-[#585859] font-medium font-poppins text-sm md:text-base">Start 20 April, 2021
+                    </p>
+                  </div>
+                  <div class="flex justify-between">
+                    <img class="w-5 md:w-6" src="./images/user.png" alt="">
+                    <p class="px-1 text-[#585859] font-medium font-poppins text-sm md:text-base"><span
+                        id="seat-counts">60</span> seats</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- cart section -->
+          <div class="flex items-start">
+            <div class="w-full md:w-[370px] px-5 py-3 my-2 md:my-4  custom-shadow rounded-xl bg-white">
+              <div class="flex py-2 justify-between">
+                <img id="course-img" class="w-[70px] h-[70px] rounded-md" src="./images/course/course-2.png" alt="">
+                <div>
+                  <p id="course-name" class="font-poppins font-medium text-[#413960]">Modern Psychology</p>
+                  <p class="text-[#585859] font-medium"><span id="course-price">1300</span> TK</p>
+                </div>
+                <a href=""><img class="w-6 h-6" src="./images/remove-btn.png" alt=""></a>
+              </div>
+              <div class="flex py-2 justify-between">
+                <img id="course-img" class="w-[70px] h-[70px] rounded-md" src="./images/course/course-3.png" alt="">
+                <div>
+                  <p id="course-name" class="font-poppins font-medium text-[#413960]">Modern Psychology</p>
+                  <p class="text-[#585859] font-medium"><span id="course-price">1300</span> TK</p>
+                </div>
+                <a href=""><img class="w-6 h-6" src="./images/remove-btn.png" alt=""></a>
+              </div>
+              <p class="w-full h-[0.5px] bg-slate-500 my-[6px]"></p>
+              <div class="flex justify-between mt-4">
+                <div class="pl-[15%] md:pl-[25%]">
+                  <p class="text-[#585859] font-sm font-medium font-poppins">Sub-Total</p>
+                  <p class="text-[10px] font-medium font-poppins text-[#888889]"><span id="course-count">4</span> items
+                  </p>
+                </div>
+                <div>
+                  <p class="text-xl font-medium font-poppins text-[#585859]"><span id="total-price">5312</span> TK</p>
+                </div>
+              </div>
+              <div class="my-5 text-right">
+                <a class="font-roboto bg-[#21B573] px-6 py-2 md:py-[10px]  rounded-3xl text-white text-base my-5"
+                  href="#">Checkout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="bg-[#282531]">
+      <div class="w-5/6 mx-auto pb-6 md:pb-10 md:pt-10 flex justify-between flex-col md:flex-row">
+        <div class="flex md:flex-col justify-between md:w-[30%] py-6 md:py-0">
+          <div class="flex items-center justify-center md:justify-start flex-col md:flex-row pr-5 md:pr-0">
+            <img class="w-14 md:w-[72px]" src="./images/logo.png" alt="">
+            <h1 class="font-bold text-[#56548C] text-lg md:text-2xl font-rubik px-1">E- School</h1>
+          </div>
+          <div class="w-[60%] md:w-auto md:pt-2">
+            <p class="text-white leading-[24px] md:leading-[30px]  font-poppins md:text-base text-sm ">Millions of
+              people of all ages and from around
+              the world are improving their lives with us</p>
+          </div>
+        </div>
+        <div class="flex md:w-[63%] justify-between">
+          <div class="text-white font-poppins leading-[24px] md:leading-[30px]  md:text-base text-sm">
+            <h1 class="text-base md:text-lg font-bold pb-2">Course</h1>
+            <ul>
+              <li><a href="#">Graphic Design</a></li>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Engineering</a></li>
+            </ul>
+          </div>
+          <div class="text-white font-poppins leading-[24px] md:leading-[30px] md:text-base text-sm mx-2">
+            <h1 class="text-base md:text-lg font-bold pb-2">Terms</h1>
+            <ul>
+              <li><a href="#">Graphic Design</a></li>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Engineering</a></li>
+            </ul>
+          </div>
+          <div class="text-white font-poppins leading-[24px] md:leading-[30px] md:text-base text-sm">
+            <h1 class="text-base md:text-lg font-bold pb-2">Useful Link</h1>
+            <ul>
+              <li><a href="#">Graphic Design</a></li>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Engineering</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="pb-7 md:pt-4">
+        <p class="text-[#CDCDCD] font-poppins text-center md:text-base text-sm">Copyright © 2024 21daysofcode.com</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
