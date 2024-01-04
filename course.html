@@ -52,15 +52,15 @@
           <!-- courses -->
           <div class="md:w-[65%]">
             <div class="flex md:w-full flex-wrap">
-              <div class="w-full md:w-[340px] px-5 py-6 md:mx-4 my-2 md:my-4 custom-shadow rounded-xl">
-                <img class="w-full" id="course-img" src="./images/course/course-2.png" alt="">
-                <h1 class="text-[#413960] font-poppins font-medium md:text-2xl text-lg mt-4 mb-1" id="course-name">
+              <!-- single course -->
+              <div class="w-full md:w-[340px] px-5 py-6 md:mx-4 my-2 md:my-4 custom-shadow rounded-xl course">
+                <img class="w-full course-img" src="./images/course/course-2.png" alt="">
+                <h1 class="text-[#413960] font-poppins font-medium md:text-2xl text-lg mt-4 mb-1 course-name">
                   Modern
-                  Psychology</h1>
-                <p class="font-poppins mb-7"><span id="course-price">1300</span> TK</p>
-                <a class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base"
-                  href="#">Buy
-                  course</a>
+                  Psychology - 1</h1>
+                <p class="font-poppins mb-7"><span class="course-price">1300</span> TK</p>
+                <button class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base">Buy Course</button>
+
                 <div class="flex justify-between flex-wrap mt-10">
                   <div class="flex justify-between pb-2">
                     <img class="w-5 md:w-6" src="./images/date.png" alt="">
@@ -70,21 +70,19 @@
                   <div class="flex justify-between">
                     <img class="h-5 md:h-6" src="./images/user.png" alt="">
                     <p class="px-1 text-[#585859] font-medium font-poppins text-sm md:text-base"><span
-                        id="seat-counts">60</span> seats</p>
+                        class="seat-counts">60</span> seats</p>
                   </div>
                 </div>
 
               </div>
-              <div class="w-full md:w-[340px] px-5 py-6 md:mx-4 my-2 md:my-4 custom-shadow rounded-xl">
-                <img class="w-full" id="course-img" src="./images/course/course-3.png" alt="">
-                <h1 class="text-[#413960] font-poppins font-medium md:text-2xl text-lg mt-4 mb-1" id="course-name">
+              <div class="w-full md:w-[340px] px-5 py-6 md:mx-4 my-2 md:my-4 custom-shadow rounded-xl course">
+                <img class="w-full course-img" src="./images/course/course-1.png" alt="">
+                <h1 class="text-[#413960] font-poppins font-medium md:text-2xl text-lg mt-4 mb-1 course-name">
                   Modern
-                  Psychology</h1>
-                <p class="font-poppins mb-7"><span id="course-price">1300</span> TK</p>
-                <a class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base"
-                  href="#">Buy
-                  course</a>
-                <div class="flex justify-between mt-10">
+                  Psychology - 2</h1>
+                <p class="font-poppins mb-7"><span class="course-price">1300</span> TK</p>
+                <button class="font-roboto bg-[#21B573] px-6 md:px-8 py-2 md:py-3 rounded-3xl text-white text-base">Buy Course</button>
+                <div class="flex justify-between flex-wrap mt-10">
                   <div class="flex justify-between pb-2">
                     <img class="w-5 md:w-6" src="./images/date.png" alt="">
                     <p class="px-1 text-[#585859] font-medium font-poppins text-sm md:text-base">Start 20 April, 2021
@@ -93,34 +91,24 @@
                   <div class="flex justify-between">
                     <img class="h-5 md:h-6" src="./images/user.png" alt="">
                     <p class="px-1 text-[#585859] font-medium font-poppins text-sm md:text-base"><span
-                        id="seat-counts">60</span> seats</p>
+                        class="seat-counts">60</span> seats</p>
                   </div>
                 </div>
 
               </div>
+
             </div>
           </div>
 
 
           <!-- cart section -->
           <div class="flex items-start">
-            <div class="w-full md:w-[350px] lg:w-[370px] px-5 py-3 my-2 md:my-4  custom-shadow rounded-xl bg-white">
-              <div class="flex py-2 justify-between">
-                <img id="course-img" class="w-[66px] h-[62px] md:w-[70px] md:h-[70px] rounded-md" src="./images/course/course-1.png" alt="">
-                <div>
-                  <p id="course-name" class="font-poppins font-medium text-[#413960] text-[15px] md:text-base">Modern Psychology</p>
-                  <p class="text-[#585859] font-medium text-[15px] md:text-base"><span id="course-price">1300</span> TK</p>
-                </div>
-                <a href=""><img class="w-6 h-6" src="./images/remove-btn.png" alt=""></a>
+            <div class="w-full md:w-[350px] lg:w-[370px] px-5 py-3 my-2 md:my-4  custom-shadow rounded-xl bg-white" >
+              <div id="carts">
+
               </div>
-              <div class="flex py-2 justify-between">
-                <img id="course-img" class="w-[66px] h-[62px] md:w-[70px] md:h-[70px] rounded-md" src="./images/course/course-3.png" alt="">
-                <div>
-                  <p id="course-name" class="font-poppins font-medium text-[#413960] text-[15px] md:text-base">Modern Psychology</p>
-                  <p class="text-[#585859] font-medium text-[15px] md:text-base"><span id="course-price">1300</span> TK</p>
-                </div>
-                <a href=""><img class="w-6 h-6" src="./images/remove-btn.png" alt=""></a>
-              </div>
+              
+
               <p class="w-full h-[0.5px] bg-slate-500 my-[6px]"></p>
               <div class="flex justify-between mt-4">
                 <div class="pl-[15%] md:pl-[25%]">
@@ -196,6 +184,7 @@
     </div>
   </footer>
 
+  <script src="./script.js"></script>
 </body>
 
 </html>
